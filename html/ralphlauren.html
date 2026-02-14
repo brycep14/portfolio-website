@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campaign PDF Viewer</title>
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Bryce Peterson - Strategist</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="campaigns.html">My Work</a>
+      <a href="resume.html">Resume</a>
+      <!-- <a href="game.html">Game</a> -->
+      <a href="contactme.html">Contact Me</a>
+    </div>
+  </div>
+
+  <main class="pdf-page-container">
+    <!-- Top Back Button -->
+    <a href="campaigns.html" class="back-button top">← Back to My Work</a>
+
+    <!-- PDF Embed Container -->
+    <div class="pdf-container">
+        <embed src="../pdfs/ralphlauren.pdf" type="application/pdf" class="pdf-embed" />
+    </div>
+
+     
+      
+
+    <!-- Bottom Back Button -->
+    <a href="campaigns.html" class="back-button bottom">← Back to Campaigns</a>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Bryce Peterson</p>
+  </footer>
+
+  <script src="../scripts/toggleMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryce Peterson - Campaigns</title>
+    <link rel="stylesheet" href="../style/style.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Bryce Peterson - Strategist</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="campaigns.html">My Work</a>
+          <a href="resume.html">Resume</a>
+          <!-- <a href="game.html">Game</a> -->
+          <a href="contactme.html">Contact Me</a>
+        </div>
+      </div>
+
+    
+      
+
+      
+  <header class="hero-section">
+    <img src="../images/funcarselfie.JPG" alt="Campaigns Banner" class="hero-img">
+    <div class="hero-text">
+      <h1>My Work</h1>
+    </div>
+  </header>
+
+
+
+  <section class="campaigns-gallery">
+
+    <a href="ralphlauren.html" class="campaign-card">
+      <img src="../images/ralphlauren.png" alt="Ralph Lauren logo">
+      <h3>SPEC
+        <p>Creative Pitch Deck</p>
+      </h3>
+    </a>
+
+
+    <a href="penguinbros.html" class="campaign-card">
+      <img src="../images/penguinbroslogo.png" alt="Penguin Brothers logo">
+      <h3>SPEC
+        <p>Brand and Social Strategy</p>
+      </h3>
+    </a>
+    
+    <a href="crocs.html" class="campaign-card">
+      <img src="../images/crocslogo.png" alt="Crocs logo">
+      <h3>SPEC
+        <p>Creative Brief Pitch Deck</p>
+      </h3>
+    </a>
+    
+    <a href="oakley.html" class="campaign-card">
+      <img src="../images/Oakleylogo.jpg" alt="Oakley logo">
+      <h3>SPEC
+        <p>One-Pager, Mini Deck Design</p>
+      </h3>
+    </a>
+
+    <a href="vanscampaign.html" class="campaign-card">
+      <img src="../images/vanslogo.png" alt="Vans logo">
+      <h3>SPEC
+        <p>Creative Brief Pitch Deck</p>
+      </h3>
+    </a>
+    
+    <a href="babyboomerresearch.html" class="campaign-card">
+      <img src="../images/pixelatedoldlady.jpg" alt="A pixelated old lady">
+      <h3>Consumer Research<br>SPEC</h3>
+    </a>
+  
+    <a href="brookscampaign.html" class="campaign-card">
+      <img src="../images/brookslogo.png" alt="Brooks Logo">
+      <h3>SPEC
+        <p>One-Pager</p>
+      </h3>
+    </a>
+  
+    <a href="redbubblecampaign.html" class="campaign-card">
+      <img src="../images/redbubblelogo.jpg" alt="RedBubble Logo">
+      <h3>SPEC
+        <p>Full Campaign</p>
+      </h3>
+    </a>
+  </section>
+  
+  
+    
+      
+
+
+
+      <footer class="footer">
+        <p>&copy; 2025 Bryce Peterson</p>
+      </footer>
+
+      <script src="../scripts/toggleMenu.js"></script>
+
+      <script>
+        // Save scroll position before navigating away
+        document.querySelectorAll('a.campaign-card').forEach(link => {
+          link.addEventListener('click', () => {
+            localStorage.setItem('scrollPosition', window.scrollY);
+          });
+        });
+      </script>
+            
+      <script>
+        // Restore scroll position if available
+        const savedScrollY = localStorage.getItem('scrollPosition');
+        if (savedScrollY !== null) {
+          window.scrollTo(0, parseInt(savedScrollY));
+          localStorage.removeItem('scrollPosition'); // only do it once
+        }
+      </script>
+            
+
+</body>
+</html>
