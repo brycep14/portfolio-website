@@ -107,24 +107,6 @@
       </footer>
 
       <script src="../scripts/toggleMenu.js"></script>
-
-      <script>
-        // Save scroll position before navigating away
-        document.querySelectorAll('a.campaign-card').forEach(link => {
-          link.addEventListener('click', () => {
-            localStorage.setItem('scrollPosition', window.scrollY);
-          });
-        });
-      </script>
-            
-      <script>
-        // Restore scroll position if available
-        const savedScrollY = localStorage.getItem('scrollPosition');
-        if (savedScrollY !== null) {
-          window.scrollTo(0, parseInt(savedScrollY));
-          localStorage.removeItem('scrollPosition'); // only do it once
-        }
-      </script>
             
 
 </body>
